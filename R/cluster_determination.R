@@ -211,7 +211,7 @@ RunModularityClustering <- function(object, SNN = matrix(), modularity = 1,
   while (file.exists(edge_file)) {
     unique_ID <- sample(10000 : 99999, 1)
     edge_file <- paste(temp.file.location, "edge_", unique_ID, ".txt", sep = "")
-    output_file <- paste(temp.file.location, "output", unique_ID, ".txt", sep = "")
+    output_file <- paste(temp.file.location, "output_", unique_ID, ".txt", sep = "")
   }
   if (print.output) {
     print.output <- 1
